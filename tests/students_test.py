@@ -51,6 +51,7 @@ def test_submit_assignment_student_1(client, h_student_1):
             'teacher_id': 2
         })
 
+    # print(response.data)
     assert response.status_code == 200
 
     data = response.json['data']
